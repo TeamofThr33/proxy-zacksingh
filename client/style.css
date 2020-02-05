@@ -9,7 +9,6 @@
 }
 
 #photoGallery {
-  border: solid 1px black;
   width: 1200px;
   height: 210px;
   position: absolute;
@@ -20,7 +19,6 @@
 }
 
 #popularDishes {
-  border: solid 1px black;
   width: 640px;
   height: 265px;
   position: absolute;
@@ -31,7 +29,7 @@
 }
 
 #reservations {
-  border: solid 1px black;
+  background: white;
   width: 318px;
   height: 180px;
   position: sticky;
@@ -40,4 +38,5 @@
   right: 1087px;
   bottom: 527px;
   margin-top: 355px;
+  z-index: 20;
 }
