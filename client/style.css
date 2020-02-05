@@ -1,0 +1,43 @@
+.module {
+  border: solid 1px black;
+}
+
+#pageContainer {
+  border: solid 1px black;
+  width: 1200px;
+  height: 3000px;
+}
+
+#photoGallery {
+  border: solid 1px black;
+  width: 1200px;
+  height: 210px;
+  position: absolute;
+  left: 8px;
+  top: 133px;
+  right: 1213px;
+  bottom: 335px;
+}
+
+#popularDishes {
+  border: solid 1px black;
+  width: 640px;
+  height: 265px;
+  position: absolute;
+  left: 127px;
+  top: 740px;
+  right: 767px;
+  bottom: 1000px;
+}
+
+#reservations {
+  border: solid 1px black;
+  width: 318px;
+  height: 172px;
+  position: sticky;
+  left: 769px;
+  top: 10px;
+  right: 1087px;
+  bottom: 527px;
+  margin-top: 355px;
+}
