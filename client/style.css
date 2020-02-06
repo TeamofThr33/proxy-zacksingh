@@ -1,3 +1,8 @@
+header {
+  width: 1200px;
+  display: flex;
+}
+
 .module {
   border: solid 1px black;
 }

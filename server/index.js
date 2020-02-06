@@ -23,6 +23,6 @@ app.get('/reservations', (req, res) => {
       res.status(200).send(response.data);
     })
     .catch((err) => {
-      res.status(404).end;
+      res.status(500).end;
     })
 })
