@@ -16,6 +16,17 @@ app.get(/icons/, function(req, res) {
   res.redirect('http://localhost:3001'+req.url);
 })
 
+app.get('/restaurants', (req, res) => {
+  axios.get('http://localhost:3001/restaurants')
+    .then((response) => {
+      console.log(response.data)
+      res.status(200).send(response.data);
+    })
+    .catch((err) => {
+      res.status(500).end;
+    })
+})
+
 app.get('/reservations', (req, res) => {
   axios.get('http://localhost:3002/reservations')
     .then((response) => {

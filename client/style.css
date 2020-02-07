@@ -1,47 +1,101 @@
-header {
-  width: 1200px;
+#pageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  height: 100px;
   display: flex;
 }
 
-.module {
-  border: solid 1px black;
+#header-img {
+  height: 100%;
 }
 
-#pageContainer {
-  border: solid 1px black;
-  width: 1200px;
-  height: 3000px;
+#galleryContainer {
+  height: 350px;
 }
 
-#photoGallery {
-  width: 1200px;
-  height: 210px;
-  position: absolute;
-  left: 8px;
-  top: 133px;
-  right: 1213px;
-  bottom: 335px;
+#pageBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-#popularDishes {
-  width: 640px;
-  height: 265px;
-  position: absolute;
-  left: 127px;
-  top: 740px;
-  right: 767px;
-  bottom: 1000px;
+#pageBody #pageLeft {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  width: 600px;
 }
 
-#reservations {
-  background: white;
-  width: 318px;
-  height: 180px;
+#stickyModule {
   position: sticky;
-  left: 769px;
-  top: 10px;
-  right: 1087px;
-  bottom: 527px;
-  margin-top: 355px;
-  z-index: 20;
+  top: 20px;
+  margin-top: 10px;
+}
+
+#rightBar {
+  display: flex;
+  flex-direction: column;
+}
+
+#right-bar-min-img {
+  max-width: 320px
+}
+
+#pageBody #pageLeft #restaurantName {
+  height: 200px
+}
+
+#restaurant-name-img {
+  height: 100%
+}
+
+#popularDishesContainer {
+  height: 100%;
+  margin: -50px !important
+}
+
+#popular-dishes {
+  height: 100%;
+}
+
+#popular-dishes-root-container {
+  display: flex;
+}
+
+#popular-dishes-root {
+  max-width: 95%;
+  max-width: 95%;
+}
+
+#reviews-top-img {
+  max-width: 100%
+}
+
+#reviews-bottom-img {
+  max-width: 100%
+}
+
+#pageBottom {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+#collections-img {
+  max-width: 100%
+}
+
+#recommendations-img {
+  max-width: 100%
+}
+
+#functionalities-img {
+  max-width: 100%
+}
+
+#footer-img {
+  max-width: 100%
 }

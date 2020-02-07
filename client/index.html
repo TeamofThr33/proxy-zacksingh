@@ -6,14 +6,50 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <header id="header">
-      <img src="yelpheader.png"/>
-    </header>
     <div id="pageContainer">
-      <div class="module" id="photoGallery">photoGallery</div>
-      <div class="module" id="popularDishes">popularDishes</div>
-      <div id="popularDishes-root"></div>
-      <div class="module" id="reservations">reservations</div>
+      <div id="header">
+        <img id="header-img" src="/screenshots/menu-min.png"/>
+      </div>
+      <div id="galleryContainer">
+        <div class="module" id="photoGallery">photoGallery</div>
+      </div>
+      <div id="pageBody">
+        <div id="pageLeft">
+          <div id="restaurantName">
+            <img id="restaurant-name-img" src="/screenshots/restaurant-name-min.png"/>
+          </div>
+          <div id="popularDishesContainer">
+            <div class="module" id="popular-dishes">popularDishes</div>
+            <div id="popular-dishes-root-container">
+              <div id="popular-dishes-root"></div>
+            </div>
+          </div>
+          <div id="reviews">
+            <img id="reviews-top-img" src="/screenshots/review-top-min.png"/>
+            <img id="reviews-bottom-img" src="/screenshots/review-bottom-min.png"/>
+          </div>
+        </div>
+        <div id="rightBar">
+          <div id="stickyModule">
+            <div class="module" id="reservations">reservations</div>
+            <img id="right-bar-min-img" src="/screenshots/right-bar-min.png"/>
+          </div>
+        </div>
+      </div>
+      <div id="pageBottom">
+        <div id="collections">
+          <img id="collections-img" src="/screenshots/collections-min.png"/>
+        </div>
+        <div id="recommendations">
+          <img id="recommendations-img" src="/screenshots/recommendations-min.png"/>
+        </div>
+        <div id="functionalities">
+          <img id="functionalities-img" src="/screenshots/functionalities-min.png"/>
+        </div>
+        <div id="footer">
+          <img id="footer-img" src="/screenshots/footer-min.png"/>
+        </div>
+      </div>
     </div>
     <script type="text/javascript" src="http://localhost:3001/bundle.js"></script>
     <script type="text/javascript" src="http://localhost:3002/bundle.js"></script>
