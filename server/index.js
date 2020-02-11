@@ -2,18 +2,28 @@ const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 const morgan = require('morgan');
+const compression = require('compression');
 
 const app = express();
 const port = 3000;
 
 app.use(cors());
 app.use(morgan('dev'));
+app.use(compression());
+
 app.use(express.static(__dirname + '/../client/'));
 app.use(express.json())
 app.listen(port, () => { console.log(`Now listening on ${port}`); });
 
 app.get(/icons/, function(req, res) {
-  res.redirect('http://localhost:3001'+req.url);
+    axios.get("http://localhost:3001"+req.url)
+        .then((response) => {
+            res.setHeader("content-type", "image/svg+xml")
+            res.end(response.data)
+        })
+        .catch((err) => {
+            res.end(err);
+        })
 })
 
 app.get('/dishes-bundle.js', (req, res) => {
@@ -66,7 +76,7 @@ app.get('/gallery-bundle.js', (req, res) => {
     })
 })
 
-app.get('/gallery', (req, res) => {
+app.get('/images', (req, res) => {
   axios.get('http://localhost:3003/images')
     .then((response) => {
       res.status(200).send(response.data);
